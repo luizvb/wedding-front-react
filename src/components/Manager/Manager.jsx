@@ -58,7 +58,7 @@ function About () {
             src='https://cdn-icons-png.flaticon.com/512/2726/2726544.png'
             alt='man-svgrepo'
           />
-          <Table striped bordered hover>
+          <Table responsive bordered hover>
             <thead>
               <tr>
                 <th>#</th>
