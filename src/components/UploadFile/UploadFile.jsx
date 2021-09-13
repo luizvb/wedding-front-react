@@ -18,7 +18,7 @@ function UploadFile () {
     setLoading(true)
     const formData = new FormData()
     formData.append('image', selectedFile)
-    await axios.post('http://localhost:3001/images', formData)
+    await axios.post('https://wedding-back-python.herokuapp.com/api/v1/images', formData)
     setLoading(false)
     setSend(true)
   }

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Gallery from 'react-photo-gallery'
 import axios from 'axios'
 
-const getPhotos = async () => axios.get('http://localhost:3001/images')
+const getPhotos = async () => axios.get('https://wedding-back-python.herokuapp.com/api/v1/images')
 
 function GalleryPhotos () {
   const [images, SetImages] = useState(false)

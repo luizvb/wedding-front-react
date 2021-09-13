@@ -16,11 +16,11 @@ function About () {
   const { push } = useHistory()
 
   const getPhotos = async () => {
-    const { data } = await axios.get('http://localhost:3001/images?infos=true')
+    const { data } = await axios.get('https://wedding-back-python.herokuapp.com/api/v1/images?infos=true')
     SetImages(data)
   }
   const approvePhoto = async ({ _id }) => {
-    await axios.put(`http://localhost:3001/images/${_id}`)
+    await axios.put(`https://wedding-back-python.herokuapp.com/api/v1/images/${_id}`)
     getPhotos()
   }
 

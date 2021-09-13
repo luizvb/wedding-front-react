@@ -8,7 +8,7 @@ const Header = ({ toggle }) => {
   return (
     <div className='Container'>
       <Nav>
-        <Logo to='https://www.linkedin.com/in/luizbeserra/'>
+        <Logo onClick={() => push('https://www.linkedin.com/in/luizbeserra/')}>
           <img
             src='https://media-exp1.licdn.com/dms/image/C4D03AQGkRyTU3rf5vQ/profile-displayphoto-shrink_800_800/0/1629592606040?e=1637193600&v=beta&t=uBHYeKAa3tF-yz-t7lUwBNWpuJtrFonJjJVjhuML5xg'
             alt='logo'
